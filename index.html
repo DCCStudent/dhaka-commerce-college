@@ -8,72 +8,41 @@
 </head>
 <body>
 
-<header><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhaka Commerce College</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- Top Header -->
 <header class="top-header">
-    <div class="logo">
-        <h1>Dhaka Commerce College</h1>
-        <p>Official Notice & PDF Portal</p>
+    <div class="header-content">
+        <img src="logo.jpg" alt="Dhaka Commerce College Logo" class="logo">
+        <div>
+            <h1>Dhaka Commerce College</h1>
+            <p>Official Notice Board</p>
+        </div>
     </div>
 </header>
 
-<!-- Navigation -->
 <nav class="navbar">
     <a href="#">Home</a>
-    <a href="#">Notices</a>
+    <a href="#">Notice</a>
     <a href="#">Downloads</a>
-    <a href="#">Contact</a>
 </nav>
 
-<!-- Main Content -->
 <main class="container">
-
-    <!-- Upload Section -->
     <section class="card">
-        <h2>📤 Upload Notice (PDF)</h2>
-        <input type="file" id="pdfFile" accept="application/pdf">
-        <button onclick="uploadPDF()">Upload & View</button>
-        <p class="hint">Only PDF files are supported</p>
-    </section>
+        <h2>📄 Latest Official Notice</h2>
 
-    <!-- Viewer Section -->
-    <section class="card">
-        <h2>📄 PDF Preview</h2>
-        <iframe id="pdfViewer" title="PDF Viewer"></iframe>
-        <p class="hint">You can zoom, scroll, and download</p>
-    </section>
+        <iframe 
+            src="uploads/notice.pdf"
+            title="Dhaka Commerce College Notice">
+        </iframe>
 
+        <p class="hint">
+            If the PDF does not load, 
+            <a href="uploads/notice.pdf" target="_blank">click here to download</a>
+        </p>
+    </section>
 </main>
 
-<!-- Footer -->
 <footer>
     <p>© 2026 Dhaka Commerce College | All Rights Reserved</p>
 </footer>
 
-<script src="script.js"></script>
-</body>
-</html>
-    <h1>Dhaka Commerce College</h1>
-    <p>PDF Notice Board</p>
-</header>
-
-<section>
-    <h2>View PDF</h2>
-   <iframe 
-    src="uploads/academictranscript.pdf"
-    title="College AcademicTranscript PDF">
-</iframe>
-</section>
-
-<script src="script.js"></script>
 </body>
 </html>
